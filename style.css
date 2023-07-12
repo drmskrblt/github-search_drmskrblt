@@ -50,6 +50,7 @@ nav #search-box input {
   border: none;
   border-radius: 4px;
   border-style: none;
+  outline: none;
 }
 
 nav #search-box button {

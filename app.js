@@ -96,11 +96,33 @@ searchButton.addEventListener("click", async () => {
     `;
 
     displayUser(userData);
+
   } else {
     console.log("error");
     searchBar.style.cssText = `
     border: 2px solid red;
     `;
-    hideUser()
+    hideUser();
+  }
+});
+
+searchBar.addEventListener("keypress", async (event) => {
+  if (event.key == "Enter") {
+    const userData = await getUserData();
+
+    console.log(userData);
+    if (searchBar.value.length > 0) {
+      searchBar.style.cssText = `
+          border: 2px solid green;
+          `;
+
+      displayUser(userData);
+    } else {
+      console.log("error");
+      searchBar.style.cssText = `
+          border: 2px solid red;
+          `;
+      hideUser();
+    }
   }
 });
