@@ -12,5 +12,5 @@ The GitHub Search project allows users to perform searches on GitHub users throu
 
 JavaScript, CSS, GitHub API
 
-To visit my project [click here](https://drmskrblt.github.io/github-search-project)
+To visit my project [click here](https://drmskrblt.github.io/github-search_drmskrblt)
 
